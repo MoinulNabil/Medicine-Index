@@ -1,0 +1,191 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --primary: #20c997;
+  --secondary: #ebebeb;
+  --dark: #000;
+  --navbar-height: 62.72px;
+
+}
+
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:"Merriweather", serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navbar Styles */
+#navigationbar {
+  width: 100%;
+  background: var(--secondary)
+}
+
+#navigationbar .menu {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+}
+
+#navigationbar .menu .menu-item {
+  padding: 16px;
+  color: var(--dark);
+}
+
+#navigationbar .menu .menu-item .menu-link {
+  padding: 16px;
+  color: var(--dark);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#navigationbar .menu .menu-link:hover {
+  background: var(--primary);
+  color: white;
+}
+
+/* Sidebar */
+
+#sidebar-col {
+
+}
+#sidebar {
+  height: auto;
+  width: 100%;
+  
+}
+
+#sidebar .menu {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: start;
+  text-wrap: nowrap;
+}
+
+#sidebar .menu .menu-item {
+  padding: 16px;
+  color: var(--dark);
+  text-wrap: nowrap;
+  align-self: flex-start;
+}
+
+#sidebar .menu .menu-item .menu-link {
+  padding: 16px;
+  color: var(--dark);
+  text-decoration: none;
+  text-wrap: nowrap;
+}
+
+#sidebar .menu .menu-link:hover {
+  background: var(--primary);
+  color: white;
+  font-weight: bold;
+}
+
+#sidebar-toggle {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  text-align: start;
+  
+}
+
+#sidebar-toggle {
+  img {
+    width: 40px;
+    height: 40px;
+  }
+  
+}
+
+.sidebar-col.show {
+  display: block;
+}
+
+
+/* Medicine List Styles */
+
+.medicine-list {
+
+}
+
+.medicine-list .medicine:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Dashbaord */
+
+
+/* Utility */
+.highlight {
+  background: yellow;
+}
+
+.content {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Media Query */
+@media only screen and (max-width:1100px) {
+  .sidebar-col {
+    display: none;
+  }
+
+  .sidebar-col.show {
+    display: block;
+    background: var(--secondary);
+    width: 100%;
+  }
+
+  #sidebar-toggle {
+    display: block;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
+
+/* Bootstrap important */
+
+.form-control {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.form-control:focus {
+  border-color: var(--primary) !important;
+
+}
+
+.btn-dark {
+  background-color: var(--primary) !important;
+  color: white !important;
+  font-weight: bold;
+  border: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
