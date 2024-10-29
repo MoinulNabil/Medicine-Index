@@ -16,7 +16,7 @@ A bit downgraded versions should work as well.
 
 
 ## Usage
-
+You can [Watch Video](https://drive.google.com/file/d/121BxWaqj9VceVVMoozLHbeVG7Hu0vCGv/view?usp=sharing) to set up the project as per the instructions below: 
 
 To get the backend ready, follow the steps below:
 
