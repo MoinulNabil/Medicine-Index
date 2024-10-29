@@ -84,7 +84,7 @@ onMounted(() => {
                 <div class="col-md-4 col-lg-4 mb-3">
                     <div class="card">
                         <div class="card-header fw-bold text-center">
-                            Total Brands
+                            Total Generics
                         </div>
                         <div class="card-body text-center">
                             <h5 class="card-title">Number of Generics</h5>
@@ -96,7 +96,7 @@ onMounted(() => {
                 <div class="col-md-4 col-lg-4 mb-3">
                     <div class="card">
                         <div class="card-header fw-bold text-center">
-                            Total Brands
+                            Total Medicines
                         </div>
                         <div class="card-body text-center">
                             <h5 class="card-title">Number of Medicines</h5>
